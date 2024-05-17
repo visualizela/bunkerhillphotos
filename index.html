@@ -25,6 +25,7 @@
         </div>
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/leaflet-rotate/dist/leaflet-rotate.min.js"></script>
         <script src="js/L.Control.Layers.Tree.min.js"></script>
         <script src="js/leaflet.rotatedMarker.js"></script>
         <script src="js/leaflet.pattern.js"></script>
@@ -77,6 +78,8 @@
             maxZoom: 28,
             minNativeZoom: 0,
             maxNativeZoom: 20
+            // Rotate the map 45 degrees
+        map.rotate({ animate: true, duration: 1, angle: 45 });
         });
         layer_CartoDbPositron_0;
         map.addLayer(layer_CartoDbPositron_0);
